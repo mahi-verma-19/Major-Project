@@ -1,7 +1,9 @@
 WRITE THE IMP THINGS HERE
 
 
-NEHAL : To run frontend - npm run dev
+NEHAL : 
+        
+        To run frontend - npm run dev
 
         To run backend - npm run dev
         
