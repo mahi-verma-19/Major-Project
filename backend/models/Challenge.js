@@ -5,6 +5,7 @@ const challengeSchema = new mongoose.Schema({
   description: String,
   difficulty: String,
   timeLimit: Number,
+  startTime: { type: Date, required: true },
   testCases: [
     { input: String, expectedOutput: String }
   ]

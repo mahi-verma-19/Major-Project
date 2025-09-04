@@ -1,12 +1,25 @@
-import { Link } from "react-router-dom";
-
+// Navbar.jsx
 export default function Navbar() {
   return (
-    <div className="navbar">
-      <Link to="/dashboard">Dashboard</Link>
-      <Link to="/dashboard/challenges">Challenges</Link>
-      <Link to="/dashboard/submissions">Submissions</Link>
-      <Link to="/dashboard/profile">Profile</Link>
-    </div>
+    <nav className="navbar">
+      <ul>
+        <li>
+          <button onClick={() => scrollToSection("about")}>About</button>
+        </li>
+        <li>
+          <button onClick={() => scrollToSection("features")}>Features</button>
+        </li>
+        <li>
+          <button onClick={() => scrollToSection("contact")}>Contact</button>
+        </li>
+      </ul>
+    </nav>
   );
+}
+
+function scrollToSection(id) {
+  const section = document.getElementById(id);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
 }

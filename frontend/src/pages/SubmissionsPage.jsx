@@ -1,12 +1,12 @@
-import Navbar from "../components/Navbar";
+import NavbarStudent from "../components/NavbarStudent";
 
 export default function SubmissionsPage() {
   return (
     <div>
-      <Navbar />
-      <div className="container">
+      <NavbarStudent />
+      <div className="dashboard-container">
         <h1>Submissions</h1>
-        <p>Here you will see all your past submissions.</p>
+        <p>Check your submissions and see your performance stats.</p>
       </div>
     </div>
   );

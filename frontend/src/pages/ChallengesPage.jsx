@@ -1,12 +1,12 @@
-import Navbar from "../components/Navbar";
+import NavbarStudent from "../components/NavbarStudent";
 
 export default function ChallengesPage() {
   return (
     <div>
-      <Navbar />
-      <div className="container">
+      <NavbarStudent />
+      <div className="dashboard-container">
         <h1>Challenges</h1>
-        <p>Here you will see all available coding challenges.</p>
+        <p>Here you can view and attempt all your coding challenges.</p>
       </div>
     </div>
   );
